@@ -1,0 +1,387 @@
+@import url(../fonts/GothamBook.css);
+@import url(../fonts/GothamBold.css);
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background: #ededed;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'arial';
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+h1{
+	font-size: 26px;
+}
+h2{
+	font-size: 20px;
+}
+h3{
+	font-size: 18px;
+}
+h4{
+	font-size: 16px;
+}
+h5{
+	font-size: 14px;
+}
+h6{
+	font-size: 12px;
+}
+p{
+	font-family: 'Times new roman';
+	letter-spacing: 2px;
+	font-size: 14px;
+	line-height: 20px;
+}
+a{
+	text-decoration: none;
+	font-family: 'Times new roman';
+	letter-spacing: 1px;
+}
+span{
+    font-family: 'GothamBook';
+    letter-spacing: 1px;
+    font-size: 14px;
+    line-height: 20px;
+}
+header{
+	position: fixed;
+	width: 100%;
+}
+.header{
+	color: #FFF;
+	background: #186F38;
+	height: 35px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.optionsBar{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.optionsBar span {
+    color: #FFF;
+    font-size: 11pt;
+    font-family: 'GothamBook';
+    text-transform: uppercase;
+    margin-left: 30px;
+}
+.photouser {
+    margin-left: 30px;
+    width: 25px;
+    height: 25px;
+}
+.close{
+	width: 25px;
+    height: 25px;
+}
+.optionsBar a {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin-left: 30px;
+}
+nav ul{
+	background: #D4AC0D;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+nav ul > li a{
+	position: relative;
+}
+nav a{
+	color: #FFF;
+	display: block;
+	font-size: 10pt;
+	font-family: 'GothamBook';
+	padding: 15px 30px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: background .5s;
+	border-right: 1px solid #9B8118;
+}
+nav .principal > a{
+    background: url(../images/arrow_bottom.png) no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto auto;
+    background-position: 94% center;
+    background-size: 10px;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav li ul{
+	background: #B49713;
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	align-items: flex-start;
+	border-radius: 0 0 10px 10px;
+}
+nav li ul a{
+	position: relative;
+	padding: 10px 30px;
+	border-right: initial;
+}
+nav li ul a:hover{
+	background: #000000;
+}
+nav li ul li:last-child{
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+}
+#container{
+	padding: 90px 15px 15px;
+}
+
+.form_register{
+	width: 450px;
+	margin: auto;
+}
+.form_register h1{
+	color: #943126;
+	text-align: center;
+}
+
+hr{
+	border: 0;
+	background: #186F38;
+	height: 1px;
+	margin: 10px 0;
+	display: block;
+}
+form{
+	background: #FFF;
+	margin: auto;
+	padding: 20px 50px;
+	border: 1px solid #d1d1d1;
+}
+label{
+	display: block;
+	font-size: 14px;
+	font-family: 'Times new roman';
+	margin: 15px auto 5px auto;
+}
+input,select{
+	display: block;
+	width: 80%;
+	font-size: 12pt;
+	padding: 5px;
+	border: 3px solid #CCC;
+	border-radius: 8px;
+}
+.notItemOne option:first-child{
+	display: none;
+}
+.btn_save{
+	font-size: 18px;
+	background: #2E86C1;
+	padding: 20px
+	letter-spacing: 1.5px;
+	border: 2px;
+	cursor: pointer;
+	margin: 15px auto; 
+	color: white;
+}
+.alert{
+	width: 90%;
+	background: #ABEBC6;
+	border-radius: 8;
+	margin: 20px auto;
+	text-align: center;
+}
+.msg_error{
+	color: #E74C3C;
+}
+.msg_save{
+	color: #FFF;
+}
+.alert p{
+	padding: 12px;
+}
+
+#container h1{
+	font-size: 25pt;
+	display: inline-block;
+	color: #943126;
+	text-align: center;
+}
+
+.btn_new{
+	display: inline-block;
+	background: #2E86C1;
+	color: #FFF;
+	padding: 5px 20px;
+	border-radius: 8px;
+	margin: 25px;
+}
+table{
+	border-collapse: collapse;
+	font-size: 14pt;
+	font-family: 'Times new roman';
+	width: 80%;
+}
+table th{
+	text-align: center;
+	padding: 10px;
+	background: #2C3E50;
+	color: #FFF;
+}
+table tr:nth-child(odd){
+	background: #FFF;
+}
+table td{
+	padding: 10px;
+	text-align: center;
+}
+.link_edit{
+	display: inline-block;
+	color: #FFF;
+	background: #9A7D0A;
+	padding: 5px 10px;
+	border-radius: 8px;
+	margin: 5px;
+	
+}
+.link_delete{
+	display: inline-block;
+	color: #FFF;
+	background: #9C1C11;
+	padding: 5px 10px;
+	border-radius: 8px;
+	margin: 5px;
+}
+.data_delete{
+	text-align: center;
+	align-items: center;
+}
+
+.data_delete h2{
+	font-size: 16pt;
+	text-align: center;
+}
+.data_delete span{
+	font-weight: lighter;
+	font-family: 'Times new roman';
+	color: #212F3D;
+	font-size: 12pt;
+}
+.data_delete p{
+	font-weight: bold;
+	font-family: 'Times new roman';
+	font-size: 14pt;
+
+}
+.btn_cancel{
+	width: 125px;
+	background: #AAB7B8;
+	color: #000;
+	display: inline-block;
+	border-radius: 6px;
+	padding: 4px;
+	cursor: pointer;
+	margin: 15px;
+}
+.btn_ok{
+	width: 125px;
+	background: #3498DB;
+	color: #FFF;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 4px;
+	cursor: pointer;
+	margin: 15px;
+}
+
+.data_delete form{
+	background: #FFF;
+	width: 40%;
+	border: 3px solid #000;
+	margin-top: 40px;
+}
+
+.data_delete form[method="post"]{
+	background: initial;
+	margin: auto;
+	padding: 20px 50px;
+	border:0;
+}
+.pagin ul{
+	padding: 15px;
+	list-style: none;
+	background: #FFF;
+	margin-top: 15px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-end;
+
+}
+.pagin a, .pageSele{
+	background: #CCD1D1;
+	color: #000;
+	border: 1px solid #000;
+	border-radius: 4px;
+	margin: 5px;
+	padding: 6px;
+	display: inline-block;
+	font-size: 14pt;
+	text-align: center;
+	width: 35px;
+}
+.pagin a:hover{
+	background: #ddd;
+}
+.pageSele{
+	color: #FFF;
+	background: #85C1E9;
+	border: 1px solid #000;
+}
+
+.form_ser{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	float: right;
+	background: initial;
+	padding: 10px;
+	border-radius: 8px;
+	border: none;
+}
+.form_ser .btn_search{
+	background: #1E8449;
+	color: #FFF;
+	padding: 0px 20px;
+	border: 1px solid #000;
+	border-radius: 6px;
+	cursor: pointer;
+	margin-left: 20px;
+}
